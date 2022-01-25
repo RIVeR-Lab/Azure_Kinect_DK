@@ -31,8 +31,13 @@ First, add the necessary keys to apt:
 `sudo apt-add-repository https://packages.microsoft.com/ubuntu/18.04/prod`  
 `curl -sSL https://packages.microsoft.com/config/ubuntu/18.04/prod.list | sudo tee /etc/apt/sources.list.d/microsoft-prod.list`  
 `curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -`  
-
-Installation steps for Ubuntu 20.04
+Then, update the apt list and install the necessary drivers
+`sudo apt-get update`  
+`sudo apt install libk4a1.3-dev`  
+`sudo apt install libk4abt1.0-dev`  
+`sudo apt install k4a-tools=1.3.0`
+Lastly, verify the drivers were set up correclty by launching the camer viewer  
+`sudo k4aviewer`  
 
 Links
 ROS Driver repo
