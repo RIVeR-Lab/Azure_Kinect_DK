@@ -50,6 +50,9 @@ Sidenote: Make sure the camera is connected to the computer via a USB 3.0 port.
 Microsoft's Kinect ROS Driver can be found here: https://github.com/microsoft/Azure_Kinect_ROS_Driver  
 If a cmake error regarding the Kinect's SDK version numbers having 3 components when 2 were requested is encountered while building the driver, refer to this link: https://github.com/microsoft/Azure_Kinect_ROS_Driver/issues/143  
 
-Pyk3a
+### Python Support
+Additional 3rd party repositories for converting the camera data into Python data types can be found here.  
+pyKinectAzure: https://github.com/ibaiGorordo/pyKinectAzure  
+pyk4a: https://github.com/etiennedub/pyk4a  
 
 
