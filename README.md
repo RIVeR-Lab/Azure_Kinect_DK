@@ -14,6 +14,7 @@ The 4:3 aspect ratio has 2 native resolutions with a FOV of 90°x74.3°:
 ### Depth Camera
 The depth camera has NFOV (Narrow Field of View) and WFOV (Wide field of View) support
 | Mode                  | Resolution	| FoI       |	FPS	          | Operating range* | Exposure time |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 | NFOV unbinned	        | 640x576     |	75°x65°   |	0, 5, 15, 30  |	0.5 - 3.86m | 12.8 ms | 
 | NFOV 2x2 binned (SW)  | 320x288     | 75°x65°	  | 0, 5, 15, 30  | 0.5 - 5.46m | 12.8 ms | 
 | WFOV 2x2 binned	      | 512x512	    | 120°x120° | 0, 5, 15, 30  | 0.25 - 2.88m | 12.8 ms |
