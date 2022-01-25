@@ -5,11 +5,14 @@ A detailed summary of the technical specifications can be found here: https://do
 
 ### Color Camera
 The color camera supports 2 aspect ratios: 16:9 and 4:3<br>
-The 16:9 aspect ratio has 4 native resolutions with a FOV of 90°x59°:
-- 1280x720, 1920x1080, 2560x1440, and 3840x2160
-
-The 4:3 aspect ratio has 2 native resolutions with a FOV of 90°x74.3°:
-- 2048x1536, 4096x3072
+| RGB Camera Resolution (HxV) | Aspect Ratio | Frame Rates (FPS) | Nominal FOV (HxV)(post-processed) |
+| ----- | ----- | ----- | ----- |
+| 3840x2160 | 16:9 | 0, 5, 15, 30 | 90°x59° |
+| 2560x1440 | 16:9 | 0, 5, 15, 30 | 90°x59° |
+| 1920x1080 | 16:9 | 0, 5, 15, 30 | 90°x59° |
+| 1280x720 | 16:9 | 0, 5, 15, 30 | 90°x59° |
+| 4096x3072 | 4:3 | 0, 5, 15 | 90°x74.3° |
+| 2048x1536 | 4:3 | 0, 5, 15, 30 | 90°x74.3° |
 
 ### Depth Camera
 The depth camera has NFOV (Narrow Field of View) and WFOV (Wide field of View) support
