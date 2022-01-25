@@ -5,7 +5,7 @@ A detailed summary of the technical specifications can be found here: https://do
 
 ### Color Camera
 The color camera supports 2 aspect ratios: 16:9 and 4:3<br>
-| RGB Camera Resolution (HxV) | Aspect Ratio | Frame Rates (FPS) | Nominal FOV (HxV)(post-processed) |
+| RGB Camera Resolution (HxV) | Aspect Ratio | Frame Rates (FPS) | Nominal FOV (HxV) (post-processed) |
 | ----- | ----- | ----- | ----- |
 | 3840x2160 | 16:9 | 0, 5, 15, 30 | 90°x59° |
 | 2560x1440 | 16:9 | 0, 5, 15, 30 | 90°x59° |
@@ -24,8 +24,13 @@ The depth camera has NFOV (Narrow Field of View) and WFOV (Wide field of View) s
 | WFOV unbinned	        | 1024x1024   | 120°x120°	| 0, 5, 15      | 0.25 - 2.21 m | 20.3 ms |
 | Passive IR            | 1024x1024   | N/A	      | 0, 5, 15, 30  | N/A | 1.6 ms |
 
-Specs of DK - important numbers
-link to spec sheet
+## Setup and Installation
+Currently, Azure Kinect DK is only supported on Ubuntu 18.04. However, the drivers can still be installed by adding Microsoft's 18.04 repo keys to apt. <br>
+First, add the necessary keys to apt:
+`curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+sudo apt-add-repository https://packages.microsoft.com/ubuntu/18.04/prod
+curl -sSL https://packages.microsoft.com/config/ubuntu/18.04/prod.list | sudo tee /etc/apt/sources.list.d/microsoft-prod.list
+curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -`
 
 Installation steps for Ubuntu 20.04
 
