@@ -39,15 +39,17 @@ Then, update the apt list and install the necessary drivers
 `sudo apt install libk4abt1.0-dev`  
 `sudo apt install k4a-tools=1.3.0`  
 
-Lastly, verify the drivers were set up correclty by launching the camer viewer  
+Lastly, verify the drivers were set up correctly by launching the camera viewer.  
 `sudo k4aviewer`  
+
+Sidenote: Make sure the camera is connected to the computer via a USB 3.0 port.
 
 ## Additional Resources
 
 ### Azure Kinect ROS Driver
-Microsoft's Kinect ROS Driver can be found here: 
-Links
-ROS Driver repo
+Microsoft's Kinect ROS Driver can be found here: https://github.com/microsoft/Azure_Kinect_ROS_Driver  
+If a cmake error regarding the Kinect's SDK version numbers having 3 components when 2 were requested is encountered while building the driver, refer to this link: https://github.com/microsoft/Azure_Kinect_ROS_Driver/issues/143  
+
 Pyk3a
 
-https://github.com/microsoft/Azure_Kinect_ROS_Driver/issues/143
+
