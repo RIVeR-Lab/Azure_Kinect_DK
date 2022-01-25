@@ -26,11 +26,11 @@ The depth camera has NFOV (Narrow Field of View) and WFOV (Wide field of View) s
 
 ## Setup and Installation
 Currently, Azure Kinect DK is only supported on Ubuntu 18.04. However, the drivers can still be installed by adding Microsoft's 18.04 repo keys to apt. <br>
-First, add the necessary keys to apt:
-`curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
-sudo apt-add-repository https://packages.microsoft.com/ubuntu/18.04/prod
-curl -sSL https://packages.microsoft.com/config/ubuntu/18.04/prod.list | sudo tee /etc/apt/sources.list.d/microsoft-prod.list
-curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -`
+First, add the necessary keys to apt: <br>
+`curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -`
+`sudo apt-add-repository https://packages.microsoft.com/ubuntu/18.04/prod`
+`curl -sSL https://packages.microsoft.com/config/ubuntu/18.04/prod.list | sudo tee /etc/apt/sources.list.d/microsoft-prod.list`
+`curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -`
 
 Installation steps for Ubuntu 20.04
 
