@@ -42,6 +42,10 @@ Then, update the apt list and install the necessary drivers
 Lastly, verify the drivers were set up correclty by launching the camer viewer  
 `sudo k4aviewer`  
 
+## Additional Resources
+
+### Azure Kinect ROS Driver
+Microsoft's Kinect ROS Driver can be found here: 
 Links
 ROS Driver repo
 Pyk3a
