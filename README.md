@@ -49,3 +49,5 @@ Microsoft's Kinect ROS Driver can be found here:
 Links
 ROS Driver repo
 Pyk3a
+
+https://github.com/microsoft/Azure_Kinect_ROS_Driver/issues/143
