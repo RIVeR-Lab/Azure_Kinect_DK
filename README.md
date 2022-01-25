@@ -33,7 +33,7 @@ First, add the necessary keys to apt:
 `curl -sSL https://packages.microsoft.com/config/ubuntu/18.04/prod.list | sudo tee /etc/apt/sources.list.d/microsoft-prod.list`  
 `curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -`  
 
-Then, update the apt list and install the necessary drivers
+Then, update the apt list and install the necessary drivers  
 `sudo apt-get update`  
 `sudo apt install libk4a1.3-dev`  
 `sudo apt install libk4abt1.0-dev`  
