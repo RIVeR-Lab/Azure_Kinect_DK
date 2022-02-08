@@ -56,7 +56,10 @@ Sidenote: Make sure the camera is connected to the computer via a USB 3.0 port.
 
 ### Azure Kinect ROS Driver
 Microsoft's Kinect ROS Driver can be found here: https://github.com/microsoft/Azure_Kinect_ROS_Driver  
-**If a cmake error regarding the Kinect's SDK version numbers having 3 components when 2 were requested is encountered while building the driver, refer to this link**: https://github.com/microsoft/Azure_Kinect_ROS_Driver/issues/143  
+
+**If a cmake error regarding the Kinect's SDK version numbers having 3 components when 2 were requested is encountered while building the driver**, edit 
+`/usr/lib/cmake/k4abt/k4abtConfig.cmake` and change `find_dependency(k4a 1.3 REQUIRED)` to `find_dependency(k4a 1.3.0 REQUIRED)`
+refer to this link: https://github.com/microsoft/Azure_Kinect_ROS_Driver/issues/143  
 
 ### Body Tracking
 The Azure Kinect offers support for body tracking, both through the normal and ROS SDK. The quickstart guide can be found here:
