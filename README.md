@@ -43,7 +43,7 @@ Then, update the apt list and install the necessary drivers
 `sudo apt install k4a-tools=1.3.0`  
 
 To set up the rules for the Kinect, navigate to https://github.com/microsoft/Azure-Kinect-Sensor-SDK, and copy 'scripts/99-k4a.rules' into '/etc/udev/rules.d/'  
-Then update the rules for your machine.
+Then update the rules for your machine.  
 `udevadm control --reload-rules && udevadm trigger`  
 
 
