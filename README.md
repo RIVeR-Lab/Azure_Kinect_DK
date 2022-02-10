@@ -48,7 +48,7 @@ Then update the rules for your machine.
 
 
 Lastly, verify the drivers were set up correctly by launching the camera viewer.  
-`sudo k4aviewer`  
+`k4aviewer`  
 
 Sidenote: Make sure the camera is connected to the computer via a USB 3.0 port.
 
