@@ -25,25 +25,15 @@ The depth camera has NFOV (Narrow Field of View) and WFOV (Wide field of View) s
 | Passive IR            | 1024x1024   | N/A	      | 0, 5, 15, 30  | N/A | 1.6 ms |
 
 ## Setup and Installation
-Currently, Azure Kinect DK is only supported on Ubuntu 18.04. However, the drivers can still be installed by adding Microsoft's 18.04 repo keys to apt.  
+Currently, Azure Kinect DK is only officially released for Ubuntu 18.04, however the binary for 18.04 can be installed on 20.04 without noticable issue. 
+More information can be found [here](https://github.com/microsoft/Azure-Kinect-Sensor-SDK/issues/1263).
 
-First, add the necessary keys to apt:  
-`curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -`  
+To install the drivers, we prepared a bash script `install_lib4a.sh` and a udev rule file in the repos.
 
-`sudo apt-add-repository https://packages.microsoft.com/ubuntu/18.04/prod`  
+Download the bash file and run `./install_lib4a.sh` to install all the packages automatically.
 
-`curl -sSL https://packages.microsoft.com/config/ubuntu/18.04/prod.list | sudo tee /etc/apt/sources.list.d/microsoft-prod.list`  
+After the installation, copy the `99-k4a.rules` to `/etc/udev/rules.d` and run
 
-`curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -`  
-
-Then, update the apt list and install the necessary drivers  
-`sudo apt-get update`  
-`sudo apt install libk4a1.3-dev`  
-`sudo apt install libk4abt1.0-dev`  
-`sudo apt install k4a-tools=1.3.0`  
-
-To set up the rules for the Kinect, navigate to https://github.com/microsoft/Azure-Kinect-Sensor-SDK, and copy 'scripts/99-k4a.rules' into '/etc/udev/rules.d/'  
-Then update the rules for your machine.  
 `udevadm control --reload-rules && udevadm trigger`  
 
 
