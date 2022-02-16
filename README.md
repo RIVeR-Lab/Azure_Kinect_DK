@@ -1,5 +1,24 @@
 # Azure Kinect DK Guide
 
+
+## Setup and Installation
+Currently, Azure Kinect DK is only officially released for Ubuntu 18.04, however the binary for 18.04 can be installed on 20.04 without noticable issue. 
+More information can be found [here](https://github.com/microsoft/Azure-Kinect-Sensor-SDK/issues/1263).
+
+To install the drivers, we prepared a bash script `install_lib4a.sh` and a udev rule file in the repos.
+
+Download the bash file and run `./install_lib4a.sh` to install all the packages automatically.
+
+After the installation, copy the `99-k4a.rules` to `/etc/udev/rules.d` and run
+
+`udevadm control --reload-rules && udevadm trigger`  
+
+
+Lastly, verify the drivers were set up correctly by launching the camera viewer.  
+`k4aviewer`  
+
+Sidenote: Make sure the camera is connected to the computer via a USB 3.0 port.
+
 ## Specifications
 A detailed summary of the technical specifications can be found here: https://docs.microsoft.com/en-us/azure/kinect-dk/hardware-specification
 
@@ -24,23 +43,6 @@ The depth camera has NFOV (Narrow Field of View) and WFOV (Wide field of View) s
 | WFOV unbinned	        | 1024x1024   | 120°x120°	| 0, 5, 15      | 0.25 - 2.21 m | 20.3 ms |
 | Passive IR            | 1024x1024   | N/A	      | 0, 5, 15, 30  | N/A | 1.6 ms |
 
-## Setup and Installation
-Currently, Azure Kinect DK is only officially released for Ubuntu 18.04, however the binary for 18.04 can be installed on 20.04 without noticable issue. 
-More information can be found [here](https://github.com/microsoft/Azure-Kinect-Sensor-SDK/issues/1263).
-
-To install the drivers, we prepared a bash script `install_lib4a.sh` and a udev rule file in the repos.
-
-Download the bash file and run `./install_lib4a.sh` to install all the packages automatically.
-
-After the installation, copy the `99-k4a.rules` to `/etc/udev/rules.d` and run
-
-`udevadm control --reload-rules && udevadm trigger`  
-
-
-Lastly, verify the drivers were set up correctly by launching the camera viewer.  
-`k4aviewer`  
-
-Sidenote: Make sure the camera is connected to the computer via a USB 3.0 port.
 
 ## Additional Resources
 
