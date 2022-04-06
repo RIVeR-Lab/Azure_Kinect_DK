@@ -55,13 +55,4 @@ Usage guide: https://github.com/microsoft/Azure_Kinect_ROS_Driver/blob/melodic/d
 `/usr/lib/cmake/k4abt/k4abtConfig.cmake` and change `find_dependency(k4a 1.3 REQUIRED)` to `find_dependency(k4a 1.3.0 REQUIRED)`
 refer to this link: https://github.com/microsoft/Azure_Kinect_ROS_Driver/issues/143  
 
-### Body Tracking
-The Azure Kinect offers support for body tracking, both through the normal and ROS SDK. The quickstart guide can be found here:
-https://docs.microsoft.com/en-us/azure/kinect-dk/body-sdk-setup
-
-### Python Support
-Additional 3rd party repositories for working with the Kinect exclusively in Python are available here:    
-pyKinectAzure: https://github.com/ibaiGorordo/pyKinectAzure  
-pyk4a: https://github.com/etiennedub/pyk4a  
-
 
